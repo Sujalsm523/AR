@@ -5,7 +5,9 @@ import { useGLTF } from "@react-three/drei";
 
 const App = () => {
   function Room() {
-    const { scene } = useGLTF("/untitled.glb");
+    const { scene } = useGLTF(
+      "https://furnouserdatabase.s3.ap-south-1.amazonaws.com/users/user_760309/scene_a2052295/model_2489754749.glb"
+    );
 
     // Note: For the user to feel "inside" the room, the 3D model's walls
     // should have their normals facing inwards, or be open from the top.
